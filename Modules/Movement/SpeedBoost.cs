@@ -1,6 +1,7 @@
 ﻿using Bark.GUI;
 using Bark.Tools;
 using BepInEx.Configuration;
+using GorillaGameModes;
 using GorillaLocomotion;
 using System;
 
@@ -18,7 +19,7 @@ namespace Bark.Modules
             try
             {
                 progress = "Getting Gamemode\n";
-                var gameMode = GorillaGameManager.instance?.GameMode();
+                var gameMode = GameMode.ActiveGameMode?.GameModeName();
                 progress = "Checking status\n";
                 if (active && (gameMode is null || gameMode == "NONE" || gameMode == "CASUAL"))
                 {
@@ -30,7 +31,7 @@ namespace Bark.Modules
             catch (Exception e)
             {
                 Logging.Debug("GorillaGameManager.instance is null:", GorillaGameManager.instance is null);
-                Logging.Debug("GorillaGameManager.instance.GameMode() is null:", GorillaGameManager.instance?.GameMode() is null);
+                Logging.Debug("GorillaGameManager.instance.GameMode() is null:", GameMode.ActiveGameMode?.GameModeName() is null);
                 Logging.Debug(progress);
                 Logging.Exception(e);
             }

@@ -81,7 +81,7 @@ namespace Bark.Networking
                 throw new Exception("Both player and rig are null");
 
             if (player is null)
-                player = rig.myPlayer;
+                player = rig.Creator;
             else if (rig is null)
             {
                 for (int i = 0; i < 10; i++)
