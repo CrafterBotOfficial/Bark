@@ -5,5 +5,11 @@
     <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(SteamPluginsPath)\$(ProjectName)\$(TargetFileName)" />
 		<Message Text="Copied to $(OculusPluginsPath)\$(ProjectName)\$(TargetFileName)" Importance="high"/>
 		<Message Text="Copied to $(SteamPluginsPath)\$(ProjectName)\$(TargetFileName)" Importance="high"/>
-	</Target>
+    
+    <!-- Copy pdb file -->
+    <Copy
+      SourceFiles="$(PdbOutput);$(PdbOutput)"
+      DestinationFiles="$(OculusPluginsPath)\$(ProjectName)\Bark.pdb;$(SteamPluginsPath)\$(ProjectName)\Bark.pdb"/>
+      
+  </Target>
 </Project>

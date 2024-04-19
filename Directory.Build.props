@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project>
 	<PropertyGroup>
-		<OculusPath>D:\Games\Oculus\Software\another-axiom-gorilla-tag</OculusPath>
+		<OculusPath>D:\Games\Oculus\Software\another-axiom-gorilla-tag\</OculusPath>
 		<OculusPluginsPath>$(OculusPath)\BepInEx\plugins</OculusPluginsPath>
 
     <SteamPath>D:\SteamLibrary\steamapps\common\Gorilla Tag\</SteamPath>
@@ -9,7 +9,9 @@
     
 		<GameAssemblyPath>$(OculusPath)\Gorilla Tag_Data\Managed</GameAssemblyPath>
 		<BepInExAssemblyPath>$(OculusPath)\BepInEx\core</BepInExAssemblyPath>
-	</PropertyGroup>
+
+    <PdbOutput>bin/Debug/netstandard2.1/Bark.pdb</PdbOutput>
+  </PropertyGroup>
 	<PropertyGroup Condition="'$(CI)'=='TRUE'">
 		<GameAssemblyPath>.\Libs</GameAssemblyPath>
 		<BepInExAssemblyPath>.\Libs</BepInExAssemblyPath>

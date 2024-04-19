@@ -1,5 +1,8 @@
 # CHANGELOG.md
 
+## 1.5.2 (2024-4-29) 
+- Fixed for latest update of Gorilla Tag
+
 ## 1.5.1 (2023-December-9) - The Christmas Update
 
 ### Features

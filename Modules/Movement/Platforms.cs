@@ -214,8 +214,8 @@ namespace Bark.Modules.Movement
 
         protected override void Cleanup()
         {
-            left.gameObject?.Obliterate();
-            right.gameObject?.Obliterate();
+            left?.gameObject?.Obliterate();
+            right?.gameObject?.Obliterate();
             Unsub();
 
         }
