@@ -94,13 +94,6 @@ namespace Bark
         {
             try
             {
-                if (NetworkSystem.Instance is not NetworkSystemPUN)
-                {
-                    Logging.Fatal("Network system is not pun.");
-                    Destroy(this);
-                    return;
-                }
-
                 Logging.Debug("Start");
                 Utilla.Events.GameInitialized += OnGameInitialized;
                 assetBundle = AssetUtils.LoadAssetBundle("Bark/Resources/barkbundle");

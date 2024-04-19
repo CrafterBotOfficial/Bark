@@ -178,7 +178,7 @@ namespace Bark.Modules.Multiplayer
             public Transform SetupHand(string hand)
             {
                 var handTransform = transform.Find(
-                    string.Format(GestureTracker.palmPath, hand).Substring(1)
+                    string.Format(GestureTracker.palmPath, hand)
                 );
                 var rb = handTransform.gameObject.AddComponent<Rigidbody>();
 
