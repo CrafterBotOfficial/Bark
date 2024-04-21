@@ -1,4 +1,4 @@
-﻿using GorillaLocomotion;
+/*﻿using GorillaLocomotion;
 using Bark.Tools;
 using System;
 using UnityEngine;
@@ -318,3 +318,4 @@ namespace Bark.Modules.Teleportation
         }
     }
 }
+*/
