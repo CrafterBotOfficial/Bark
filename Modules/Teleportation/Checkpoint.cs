@@ -1,4 +1,4 @@
-﻿using GorillaLocomotion;
+/*﻿using GorillaLocomotion;
 using Bark.Extensions;
 using Bark.Gestures;
 using Bark.GUI;
@@ -198,7 +198,7 @@ namespace Bark.Modules.Teleportation
 
         public override string Tutorial()
         {
-            return "Hold [Left Trigger] to spawn a checkpoint. Hold [Right Trigger] to return to it.";
+            return "Hold [Left Trigger] to spawn a checkpoint. Hold [Right Trigger] to return to it.";*/
         }
     }
 }
